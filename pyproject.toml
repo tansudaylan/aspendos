@@ -21,5 +21,12 @@ classifiers = [
 ]
 dependencies = ["numpy"]
 
+[project.optional-dependencies]
+plotting = ["matplotlib"]
+
 [tool.setuptools.packages.find]
 include = ["aspendos*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
