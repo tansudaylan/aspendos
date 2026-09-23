@@ -8,7 +8,10 @@ Aspendos provides focused dark-matter and cosmology calculations shared across t
 
 ```bash
 python -m pip install -e ".[plotting]"
+export ASPENDOS_PATH=/path/to/aspendos
 ```
+
+`ASPENDOS_PATH` identifies the repository root. Runtime inputs belong under `data/` and generated pipeline outputs belong under `visuals/`. Both directories are ignored by Git.
 
 ## Truncation-mass kernel
 
