@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Aspendos provides focused dark-matter and cosmology calculations shared across the astrophysics ecosystem. Its current supported surface is the dimensionless truncation-mass kernel used by the Chalcedon lensing library and the PCAT probabilistic-cataloging pipeline.
+Aspendos calculates dark-matter and cosmological quantities for lensing and probabilistic-cataloging analyses. Its current interface converts a positive cutoff-to-scale-radius ratio into the dimensionless mass enclosed by a truncated halo profile.
 
 ## Installation
 
