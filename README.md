@@ -4,6 +4,8 @@
 
 Aspendos calculates dark-matter and cosmological quantities for lensing and probabilistic-cataloging analyses. Its current interface converts a positive cutoff-to-scale-radius ratio into the dimensionless mass enclosed by a truncated halo profile.
 
+**Note:** the truncated-halo mass kernel (`retr_mcutfrommscl`, `retr_mcut`) is implemented in [Chalcedon](../chalcedon), the ecosystem's upstream gravitational-lensing library. Aspendos re-exports it for backward compatibility.
+
 ## Installation
 
 ```bash
