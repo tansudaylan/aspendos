@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Plot the analytic truncated-lens mass kernel."""
 
+from tdpy.verbosity import print
+
 import argparse
 from pathlib import Path
 
