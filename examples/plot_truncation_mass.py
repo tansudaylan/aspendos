@@ -4,6 +4,7 @@
 from tdpy.verbosity import print
 
 import argparse
+from tdpy.cli import add_plot_arguments
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -16,7 +17,7 @@ def main() -> None:
     """Generate the dimensionless truncation-mass figure."""
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--typefileplot", choices=("png", "pdf"), default="png")
+    add_plot_arguments(parser)
     arguments = parser.parse_args()
 
     radius_ratio = np.logspace(-2.0, 2.0, 500)
