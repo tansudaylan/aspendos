@@ -1,7 +1,13 @@
 import numpy as np
 import pytest
+import chalcedon
 
-from aspendos import retr_mcutfrommscl
+from aspendos import retr_mcut, retr_mcutfrommscl
+
+
+def test_mass_kernels_are_chalcedon_exports():
+    assert retr_mcut is chalcedon.retr_mcut
+    assert retr_mcutfrommscl is chalcedon.retr_mcutfrommscl
 
 
 def test_truncation_mass_normalization_at_unit_ratio():
